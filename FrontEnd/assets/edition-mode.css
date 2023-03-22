@@ -1,0 +1,31 @@
+
+/*CSS des btn-modifier*/
+
+.modifier, .modifier2, .modifier3{
+	display:none;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    font-family: 'Work Sans' ;
+}
+
+.modifier.active, .modifier2.active, .modifier3.active{
+	display: flex;
+    cursor: pointer;  
+}
+
+#introduction i{
+    padding-right: 10px;
+}
+
+#portfolio h2{
+    justify-content: center;
+}
+
+#portfolio .modifier3 i{
+   padding-right: 10px;
+}
+
+#portfolio .modifier3 {
+    padding: 15px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/test.css">
+	<link rel="stylesheet" href="./assets/modale.css">
+	<link rel="stylesheet" href="./assets/modale2.css">
+	<link rel="stylesheet" href="./assets/edition-mode.css">
+	<script type="module" src="acceuil.js"></script>
+	<script type="module" src="modale.js"></script>
+	<script type="module" src="modale2.js"></script>
+    <script src="https://kit.fontawesome.com/88bdbc915e.js" crossorigin="anonymous"></script>
+</head>
+	 
+
+<body>
+<header>
+
+	<div id="modal"> 
+	    <div class="modal-container">       
+            <div class="overlay modal-trigger"></div>
+				<div class= "modal">
+					<button class="close-modal modal-trigger">X</button>
+					<h2>Galerie photo</h2>            
+					<div class="gallery1"></div>		
+					<div class="button">
+					<button class="btn-newpic modal-newpic">Ajouter une photo</button>
+					<p>Supprimer la galerie</p>
+				</div>           
+            </div>
+		</div>
+        <div class="button-change">
+            <button class="edition-mode"><i class="fa-solid fa-pen-to-square"></i>Mode édition</button><button class="modal-btn modal-trigger">Publier les changements</button>
+        </div>
+
+		<div id="modal2">
+			<div class= "modal-container2">
+				<div class= "overlay">
+					<div class= "modal2">
+						<button class="comeback-modal modal-newpic"><i class="fa-solid fa-arrow-left"></i></button>
+						<button class="close-modal modal-triger2">X</button>
+						<h2>Ajout photo</h2> 
+						<form id="formulaire-photo" enctype="multipart/form-data" method="post" action="http://localhost:5678/api/users/login">
+							<div class="one-more">
+								<i class="fa-solid fa-mountain-sun"></i>
+								<label for="image_uploads">+ Ajouter une image</label>
+								<input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+								<img class="picture" src="#" alt="#"> 
+								<p>jpg.png: 4mo max</p>
+							</div>
+							<div class="titre-categories">
+								<label for="title">Titre</label>
+							<input type="text" name="title" id="title" required>
+							<label for="btn-categories-modale">Catégorie</label>
+							<select id="btn-categories-modale" name="btn-categories-modale">
+								<option value="">Catégories</option>
+							</select>
+							</div>
+							<div class="button-ok">
+								<input type="button" id="btn-valider" value="valider">
+							</div>								
+						</form>
+						                          
+					</div>
+				</div>
+			</div>
+		</div> <!--fin de la modal2-->		
+    </div> <!--fin de la modal1-->
+
+    <div id="soso">
+	    <h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
+	    <nav>
+		    <ul>
+			    <li>projets</li>
+			    <li>contact</li>
+			    <li><a class= "login" href="login.html">login</a>
+					<a class = "logout" href="#">logout</a></li>
+			    <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		    </ul>
+	    </nav>
+    </div>
+</header>
+
+<main>
+	<div id="introduction">
+		<figure>
+			<img src="./assets/images/sophie-bluel.png" alt="">
+			<button class = "modifier"><i class="fa-solid fa-pen-to-square"></i>modifier</button>
+		</figure>
+		<article>
+			<button class="modifier2"><i class="fa-solid fa-pen-to-square"></i> modifier</button>
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</div>
+	<section id="portfolio">
+		<h2>Mes Projets <button class="modifier3"><i class="fa-solid fa-pen-to-square"></i>modifier</button></h2>
+		<div  id="btn-container">
+			<button class="btn-category-filter-all">Tous</button>
+		</div> 			
+		<div class="gallery"></div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
+</main>
+
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#contact input button {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact a{
+	color: black;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 355px;
+}
+
+#contact .erreur{
+	color: red;
+	font-size: 15px;
+	margin:10px
+}
+
