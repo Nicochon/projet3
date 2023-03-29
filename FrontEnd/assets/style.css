@@ -22,6 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
+	color: black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -54,7 +56,21 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
-header {
+header{
+    display:flex;
+    flex-direction: column;
+}
+#modal{
+    background-color: black;
+	display:flex;
+    justify-content: center;
+}
+
+#modal .button-change p i{
+	color: white;
+	padding-right: 10px;
+}
+#soso {
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 0
@@ -94,14 +110,15 @@ nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
 }
-nav li a {
-	text-decoration: none;
-	color: black;
-}
 
 li:hover {
 	color: #B1663C;
 }
+
+#soso a:hover {
+	color: #B1663C;
+}
+
 #introduction {
 	display: flex;
 	align-items: center;
@@ -109,10 +126,14 @@ li:hover {
 #introduction figure {
 	flex: 1
 }
-#introduction img {
+#introduction img, .modifier {
 	display: block;
 	margin: auto;
 	width: 80%;
+}
+
+#introduction .modifier{
+	padding-top: 15px;
 }
 
 #introduction article {
@@ -120,6 +141,7 @@ li:hover {
 }
 #introduction h2 {
 	margin-bottom: 1em;
+	padding: 30px 0 0 0;
 }
 
 #introduction p {
@@ -129,6 +151,7 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
 
 #btn-container{
 	display: flex;
@@ -184,6 +207,7 @@ margin: auto;
 
 #contact input {
 	height: 50px;
+	width: auto;
 	font-size: 1.2em;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
@@ -201,8 +225,7 @@ input[type="submit"]{
 	font-weight: 700;
 	color: white;
 	background-color: #1D6154;
-	margin : 2em auto ;
-	width: 180px;
+	margin : 2em 180px ;
 	text-align: center;
 	border-radius: 60px ;
 }

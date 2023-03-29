@@ -61,7 +61,7 @@ modalBtn.addEventListener("click",generateNewGallery);
 const clefToken = window.localStorage.getItem("token");
 
 function view(){
-    exterminator(this.getAttribute('data-id'));
+    deleteWork(this.getAttribute('data-id'));
     generateNewGallery(); 
     generateGallery();
 }
@@ -82,7 +82,7 @@ function view(){
 
 
 //fonction demande de DELETE
-async function exterminator(id){
+async function deleteWork(id){
     const response = await fetch('http://localhost:5678/api/works/' + id, {
         method: 'DELETE',
         headers: {

@@ -20,11 +20,10 @@ buttonInput.addEventListener("click",async function(){
         body:JSON.stringify(login)
         
     });
-    
-    
-
-    loginOrNotLogin(response);  
+    loginUser(response);  
 });
+
+
 
 // function redirection suite a un retour positif de l'API. OK    
 function redirection(){
@@ -41,7 +40,7 @@ function generateErreur(){
         }
 
 // assembler les deux fonction pour qu'elle sactivent selon la reponse de l'API. OK 
-async function loginOrNotLogin(response) {
+async function loginUser(response) {
     let responseJSON = await response.json();
     //let result;
     if (response.ok === true){
