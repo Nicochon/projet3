@@ -27,7 +27,7 @@ buttonInput.addEventListener("click",async function(){
 
 // function redirection suite a un retour positif de l'API. OK    
 function redirection(){
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "index.html";
 } 
 
 // function de réponse suite a un retour erreur de l'api. OK

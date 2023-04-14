@@ -6,7 +6,7 @@ const photos = await reponsePhotos.json();  // enregistrement du retour de l'API
 function generateGallery(photos){ //création d'une gallery photo
     document.querySelector(".gallery").innerHTML ="";  //on place cette fonction dans .gallery bloc de notre HTML
 
-    for (let i = 0; i < photos.length; i++) { //i est egal a zero la boucle continue tant que i n'est pas superieur aux lignes de tableau photos, i prend +1 a chaque boucle 
+    for (let i = 0; i < photos.length; i++) { //i est egal a zero la boucle continue tant que i n'est pas superieur aux lignes de tableau photos,      i prend +1 a chaque boucle 
 
         const figureElement = document.createElement("figure"); // const figureElement correspond a une creation d'une balise figure
     

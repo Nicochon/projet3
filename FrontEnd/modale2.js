@@ -46,7 +46,7 @@ okInput.addEventListener("click",async function(e){
     const input =  document.getElementById("image_uploads"); 
 
     var data = new FormData();
-    data.append("image", input.files[0]);//pour contourner la sécurité du navigateur 
+    data.append("image", input.files[0]);//pour contourner la sécurité du navigateur [0] tableau premier element
     data.append("title", titleInput);
     data.append("category", categoriesInput);
 

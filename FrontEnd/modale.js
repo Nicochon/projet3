@@ -23,7 +23,6 @@ function clearStorage(){
 };
 logoutLogin.addEventListener("click", clearStorage);
 
-
 // apparition disparition du mode édition au click du btn-mode-édition. OK
 const modifier = document.querySelector(".modifier");
 const modifier2 = document.querySelector(".modifier2");
@@ -50,7 +49,6 @@ modalTriggers.forEach(trigger => trigger.addEventListener("click",toggleModal2))
 function toggleModal2(){
     modalContainer.classList.toggle("active");  
 };
-
 
 // création de la gallery-photo ainsi que les boutons "poubelle" de façon dynamique. OK
 const modalBtn = document.querySelector(".modal-btn");

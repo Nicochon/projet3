@@ -15,30 +15,33 @@
 </head>
 <body>
 <header>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li>login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
+	<div id="soso">
+	    <a class="logo" href="index.html"><h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1></a>
+	    <nav>
+		    <ul>
+			    <li>projets</li>
+			    <li>contact</li>
+			    <li><a class= "login" href="login.html">login</a>
+			    <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		    </ul>
+	    </nav>
+    </div>
 </header>
 
-<section id="contact">
-    
+<section id="login">
+
 	<h2>Log in</h2>
+	<div class="erreur"></div>
     <form action="http://localhost:5678/api/users/login" method="post">
         <label for="name">E-mail</label>
         <input type="email" name="E-mail" id="name" required>
         
 		<label for="password">Mot de passe</label>
         <input type="password" name= "email" id = "password" required>
-		<div class="erreur"></div>
+		
         
 		<input type="button" id ="button" value="Se Connecter">
-        <a href="#"> Mot de passe oublié </a>
+    	<a href="#"> Mot de passe oublié </a>	
     </form>
 </section>
 
